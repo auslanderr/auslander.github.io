@@ -25,11 +25,11 @@
 
         <div class="view hm-black-strong jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(assets/background.gif); min-height: 0px;">
             <div class="full-bg-img">
-                <audio id="bg" preload="auto" autoplay loop>
-                    <source id="played" src="assets/music.mp3" type="audio/mp3" />
+                <iframe src="assets/preloader.mp3" allow="autoplay" style="display:none"></iframe>
+                <audio id="bg" autoplay loop>
+                  <source src="assets/music.mp3">
                 </audio>
-
-                <iframe src="assets/music.mp3" allow="autoplay" style="display:none"></iframe>
+                
 
                 <div class="container flex-center flex-column text-center">
 
@@ -61,7 +61,7 @@
         <div class="container font-up white-text text-center">
             <div id="about" class="h1 py-3 rounded z-depth-1-half white black-text font-weight-bold wow bounceIn">About us</div>
             <br>
-            <p>We are a commend service,
+            <p>We are a commending service,
                 <br> We started our service on February 10th 2019.
                 <br> 
                 <br> Your order will be taken within 12 hours after the payment.
@@ -153,10 +153,14 @@
 
                 <select id="boostTo" class="mdb-select calculator">
                     <option value="0" >Take a package.</option>
-                    <option value="1" >5000 COMMENDS</option>
-                    <option value="2" >10000 COMMENDS</option>
-                    <option value="3" >15000 COMMENDS</option>
-                    <option value="4" >20000 COMMENDS</option>
+                    <option value="1" >3000 COMMENDS</option>
+                    <option value="2" >4000 COMMENDS</option>
+                    <option value="3" >5000 COMMENDS</option>
+                    <option value="4" >6000 COMMENDS</option>
+                    <option value="5" >7000 COMMENDS</option>
+                    <option value="6" >8000 COMMENDS</option>
+                    <option value="7" >9000 COMMENDS</option>
+                    <option value="8" >10000 COMMENDS</option>
                   </select>
 
             </div>
@@ -178,15 +182,11 @@
                 <br>
                 <p>WE USUALLY DONT TAKE LONG TOO RESPOND.
                     <br>
-                    <br> YOU CAN PRIVATE MESSAGE queen#1335 or H4PPY#9999.
+                    <br> YOU CAN PRIVATE MESSAGE queen#1335 or sis#4444.
                     <br> If you have any other questions about our service you can join our discord.</p>
             </div>
     
             <div class="container flex-center">
-    
-                <a class="btn btn-outline-white waves-effect" href="admin@commend.ooo" target="_blank" style="background-color: rgba(0, 0, 0, 0.2)">
-                    Email
-                </a>
     
                 <a class="btn btn-outline-white waves-effect" href="https://discord.gg/WbZhghW" target="_blank" style="background-color: rgba(0, 0, 0, 0.2)">
                     Discord
@@ -217,7 +217,7 @@
     });
 </script>
     <script>
-    var priceList = [3, 5, 8, 11];
+    var priceList = [2.50, 3.00, 3.50, 4.00, 4.50, 5.00, 5.50, 6.00];
 
     function CalculatePrice() {
         var from = parseInt($("#boostFrom").val());
