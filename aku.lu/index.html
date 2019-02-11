@@ -15,7 +15,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 </head>
 
-<body class="contect unselectable">
+<body>
 
     <div id="mdb-preloader" class="flex-center">
     <div id="preloader-markup">
@@ -28,6 +28,7 @@
                 <audio id="bg" preload="auto" autoplay loop>
                     <source id="played" src="assets/music.mp3" type="audio/mp3" />
                 </audio>
+            
 
                 <div class="container flex-center flex-column text-center">
 
@@ -35,19 +36,18 @@
 
                         <div class="display-1 white-text wow fadeInUp">COMMEND.OOO</div>
                         <div class="white" style="height: 2px"></div>
-                        <div class="h5-responsive font-up white-text wow fadeInUp" data-wow-delay="0.5s">CHEAPEST COMMEND SERVICE SINCE 2019.</div>
-                        <span class="mx-2"></span>
-                        <div class="h5-responsive font-up white-text wow fadeInUp smooth-scroll" data-wow-delay="1s">
-                            <a href="#about" class=""> <u> ABOUT US</u></a>
-                            <span class="mx-2"></span>
-                            <a href="#calculate" class=""> <u> Calculate</u></a>
-                            <span class="mx-2"></span>
-                            <a href="#contact" class=""> <u> CONTACT US</u></a>
+                        <div class="h5-responsive font-up white-text wow fadeInUp" data-wow-delay="0.5s">COMMEND SERVICE</div>
 
-
-                        </div>
                     </div>
+
+                    <div class="flex-row mt-5 font-up smooth-scroll">
+                        <a href="#aboutUs" class="blue-grey-text"><u>ABOUT US</u></a>
+                        <span class="mx-2"></span>
+                      
+                    </div>
+
                 </div>
+
             </div>
         </div>
 
@@ -57,14 +57,24 @@
         <div style="height: 80px"></div>
 
         <div class="container font-up white-text text-center">
-            <div id="about" class="h1 py-3 rounded z-depth-1-half white black-text font-weight-bold wow bounceIn">About us</div>
+            <div id="aboutUs" class="h1 py-3 rounded z-depth-1-half white black-text font-weight-bold wow bounceIn">About us</div>
             <br>
             <p>We are a commend service,
                 <br> We started our service on February 10th 2019.
                 <br> 
                 <br> Your order will be taken within 12 hours after the payment.
-                
+                <br> If you have any other questions about our service you can join our discord.</p>
         </div>
+
+        <div class="container flex-center">
+
+            <a class="btn btn-outline-blue waves-effect" href="Commendservice@gmail.com" target="_blank" style="background-color: rgba(0, 0, 0, 0.2)">
+                Email
+            </a>
+
+            <a class="btn btn-outline-grey waves-effect" href="https://discord.gg/WbZhghW" target="_blank" style="background-color: rgba(0, 0, 0, 0.2)">
+                Discord
+            </a>
 
         </div>
 
@@ -87,7 +97,6 @@
 
                         <p class="card-text" style="font-size: 12px">
                             We will complete your order within a day!
-                            <br> here are our prices, </br>
                         </p>
 
                     </div>
@@ -140,68 +149,8 @@
         <div style="height: 40px"></div>
 
         <div class="container text-center">
-            <div id="calculate" class="h1 py-3 mb-5 font-up rounded z-depth-1-half white black-text font-weight-bold wow bounceIn">Calculate your price</div>
 
-            <div class="d-flex flex-row flex-wrap justify-content-center">
-
-                <select id="boostFrom" arria-hidden="true">
-                    <option value="0" >5000 COMMENDS</option>
-                    
-                </select>
-
-                <select id="boostTo" class="mdb-select calculator">
-                    <option value="0" >Take a package.</option>
-                    <option value="1" >5000 COMMENDS</option>
-                    <option value="2" >10000 COMMENDS</option>
-                    <option value="3" >15000 COMMENDS</option>
-                    <option value="4" >20000 COMMENDS</option>
-                  </select>
-
-            </div>
-
-            <div id="price" class="mt-4 font-up white-text font-weight-bold" style="font-size: 64px">0 €</div>
-
-        </div>
-
-    
-    <div class="container font-up">
-        <div class="white" style="height: 2px"></div>
-        <div class="black" style="height: 2px"></div>
-        <div class="row mb-5">
-            </div>
-        <div style="height: 20px"></div>
-
-        <div class="container font-up white-text text-center">
-                <div id="contact" class="h1 py-3 rounded z-depth-1-half white black-text font-weight-bold wow bounceIn">CONTACT US</div>
-                <br>
-                <p>WE USUALLY DONT TAKE LONG TOO RESPOND.
-                    <br>
-                    <br> YOU CAN PRIVATE MESSAGE queen#1335 or H4PPY#9999.
-                    <br> If you have any other questions about our service you can join our discord.</p>
-            </div>
-    
-            <div class="container flex-center">
-    
-                <a class="btn btn-outline-white waves-effect" href="admin@commend.ooo" target="_blank" style="background-color: rgba(0, 0, 0, 0.2)">
-                    Email
-                </a>
-    
-                <a class="btn btn-outline-white waves-effect" href="https://discord.gg/WbZhghW" target="_blank" style="background-color: rgba(0, 0, 0, 0.2)">
-                    Discord
-                </a>
-    
-            </div>
-    
-            <div style="height: 60px"></div>
-    
-            <div class="container font-up">
-                <div class="white" style="height: 2px"></div>
-                <div class="black" style="height: 2px"></div>
-                <div class="row mb-5">
-
-    </main>
-   
-    </div>
+           
 
     <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -215,7 +164,7 @@
     });
 </script>
     <script>
-    var priceList = [3, 5, 8, 11];
+    var priceList = [4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6, 6, 6, 10, 10, 12, 12];
 
     function CalculatePrice() {
         var from = parseInt($("#boostFrom").val());
@@ -224,13 +173,13 @@
         var delta = to - from;
 
         if(delta <= 0) {
-            $("#price").text("0€");
+            $("#price").text("Invalid");
         }
         else {
             var price = 0;
 
             for(var i = from; i < to; i++) {
-                price = priceList[i];
+                price += priceList[i];
             }
 
             $("#price").text(price + "€");
@@ -258,14 +207,6 @@
         });
     }
     CalculatorInitialize();
-</script>
-
-
-
-
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/mdb.min.js"></script>
-
+    </script>
 </body>
 </html>
